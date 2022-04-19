@@ -49,11 +49,11 @@ public class 컬렉션과제네릭기법실습5번 {
 			System.out.print("학생 이름 >> ");
 			String a= scanner.nextLine();
 			for(int i=0; i<4; i++) {
-					if(a==arr.get(i).name) {
+					if(a.equals(arr.get(i).name)) {
 						System.out.println(arr.get(i).toString());
 					}
 				}
-			if(a=="그만") {
+			if(a.equals("그만")) {
 				break;
 			}
 				
