@@ -13,28 +13,28 @@ public class 상속실습문제11 {
 		int q=Integer.parseInt(k[0]);
 		int b=Integer.parseInt(k[1]);
 		
-		if(k[2]=="+") {
+		if(k[2].equals("+")) {
 			Add n= new Add();
 			n.setValue(q, b);
 			int m =n.calculate();
 			System.out.println(m);
 		}
 		
-		else if(k[2]=="-") {
+		else if(k[2].equals("-")) {
 			Sub n= new Sub();
 			n.setValue(q, b);
 			int m =n.calculate();
 			System.out.println(m);
 		}
 		
-		else if(k[2]=="*") {
+		else if(k[2].equals("*")) {
 			Mul n= new Mul();
 			n.setValue(q, b);
 			int m =n.calculate();
 			System.out.println(m);
 		}
 		
-		else if(k[2]=="/") {
+		else if(k[2].equals("/")) {
 			Div n= new Div();
 			n.setValue(q, b);
 			int m =n.calculate();
