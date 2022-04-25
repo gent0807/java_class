@@ -1,10 +1,13 @@
 package examples02;
 import java.util.*;
 public class PhoneBook {
-	static ArrayList<Phone> p= new ArrayList<Phone>();
+	static ArrayList<Phone> p;
+	
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		p=new ArrayList<Phone>();
 		Scanner a= new Scanner(System.in);
 		System.out.print("인원수>>");
 		
@@ -33,15 +36,17 @@ public class PhoneBook {
 			else
 				System.out.println(inname+"의 번호는 "+tel+"입니다.");
 	  }
-    }
+	}
+
+		static String search(String str) {
+			for(int i=0; i<p.size();i++) {
+				if(str.equals(p.get(i).getName())) 
+					return p.get(i).getTel();
+			
+		}
+			return null;
+			
+		}
 	
-	static String search(String str) {
-		for(int i=0; i<p.size();i++) {
-			if(str.equals(p.get(i).getName())) 
-				return p.get(i).getTel();
-		
-	}
-		return null;
-		
-	}
+	
 }

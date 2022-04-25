@@ -9,9 +9,11 @@ public class Pen {
 		this.amount=amount;
 	}
 }
+
 class SharpPencil extends Pen{
 	private int width;
 }
+
 class BallPen extends Pen{
 	private String color;
 	public String getColor() {
@@ -21,8 +23,9 @@ class BallPen extends Pen{
 		this.color=color;
 	}
 }
+
 class FountainPen extends BallPen{
 	public void refill(int n) {
-	     setAmount(n);
+		setAmount(n);
 	}
 }
