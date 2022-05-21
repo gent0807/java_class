@@ -16,12 +16,12 @@ public class Ex04 {
 			while((ch=fin.read())!= -1){
 				fout.write(ch);
 			}
-			System.out.println("�옉�뾽�씠 �셿猷뚮릺�뿀�뒿�땲�떎.");
+			System.out.println("");
 			fin.close();
 			fout.close();
 		}catch(Exception e){
 			e.printStackTrace();
-			System.out.println("�삁�쇅 諛쒖깮~");
+			System.out.println("");
 			
 		}
 	}

@@ -21,7 +21,7 @@ public class Ex03 {
 		}
 		
 		catch(Exception e){
-			System.out.println("�삁�쇅 諛쒖깮~");
+			System.out.println("");
 			e.printStackTrace();
 			
 		}

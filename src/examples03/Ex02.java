@@ -19,7 +19,7 @@ public class Ex02 {
 				fout.write(line+"\n");
 				
 			}
-			System.out.println("�뙆�씪 �벐湲� �셿�꽦~");
+			System.out.println("");
 			fout.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

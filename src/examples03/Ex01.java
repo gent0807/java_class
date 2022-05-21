@@ -11,7 +11,7 @@ public class Ex01 {
 		 FileReader fin= new FileReader("c:\\test.txt");
 		
 		
-		 int c;
+		 int c; //read()가  int 타입 정수를 리턴하기 때문에
 		
 		 while((c=fin.read())!=-1) {
 			System.out.print((char)c);
