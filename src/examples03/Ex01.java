@@ -14,7 +14,7 @@ public class Ex01 {
 		 int c; //read()가  int 타입 정수를 리턴하기 때문에
 		
 		 while((c=fin.read())!=-1) {
-			System.out.print((char)c);
+			System.out.print((char)c);//char 형변환 연산을 안해주면 문자가 아닌 정수가 출력된다.
 		}
 		fin.close();
 		}catch(FileNotFoundException e) {
