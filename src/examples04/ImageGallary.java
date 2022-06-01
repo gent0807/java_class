@@ -16,6 +16,7 @@ public class ImageGallary extends JFrame{
 	int i;
 	
 	public ImageGallary() {
+		int k=0;
 		this.setTitle("Image Gallary Practice Frame");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -42,7 +43,7 @@ public class ImageGallary extends JFrame{
 		
 		lb.setIcon(images[0]);
 		left.setVisible(false);
-		i=0;
+		
 		
 		left.addActionListener(new ActionListener() {
 			
@@ -85,6 +86,7 @@ public class ImageGallary extends JFrame{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		new ImageGallary();
 		new ImageGallary();
 	}
 
