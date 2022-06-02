@@ -1,10 +1,10 @@
 package examples;
 import java.util.Scanner;
-public class »ó¼Ó½Ç½À¹®Á¦11 {
+public class ìƒì†ì‹¤ìŠµë¬¸ì œ11 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("µÎ Á¤¼ö¿Í ¿¬»êÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À.>>");
+		System.out.print(" ");
 		Scanner a=new Scanner(System.in);
 		
 		String r=a.nextLine();

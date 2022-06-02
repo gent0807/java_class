@@ -16,6 +16,7 @@ public class ImageGallary extends JFrame{
 	int i;
 	
 	public ImageGallary() {
+		i=0;
 		this.setTitle("Image Gallary Practice Frame");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		

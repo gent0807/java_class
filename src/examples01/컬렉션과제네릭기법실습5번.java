@@ -18,13 +18,13 @@ class Student{
 		return this.name+", "+this.major+", "+this.num+", "+this.score;
 	}
 }
-public class ÄÃ·º¼Ç°úÁ¦³×¸¯±â¹ý½Ç½À5¹ø {
+public class ì»¬ë ‰ì…˜ê³¼ì œë„¤ë¦­ê¸°ë²•ì‹¤ìŠµ5ë²ˆ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<Student> arr= new ArrayList<Student>();
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("ÇÐ»ý ÀÌ¸§, ÇÐ°ú, ÇÐ¹ø, ÇÐÁ¡Æò±Õ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ï¿½Ð»ï¿½ ï¿½Ì¸ï¿½, ï¿½Ð°ï¿½, ï¿½Ð¹ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 		for(int i=0;i<4;i++) {
 			System.out.print(">>");
 			String a= scanner.nextLine();
@@ -40,20 +40,20 @@ public class ÄÃ·º¼Ç°úÁ¦³×¸¯±â¹ý½Ç½À5¹ø {
 		
 		for(int i=0;i<4;i++) {
 			System.out.println("---------------------");
-			System.out.println("ÀÌ¸§:"+arr.get(i).name);
-			System.out.println("Àü°ø:"+arr.get(i).major);
-			System.out.println("ÇÐ¹ø:"+arr.get(i).num);
-			System.out.println("ÇÐÁ¡Æò±Õ:"+arr.get(i).score);
+			System.out.println(":"+arr.get(i).name);
+			System.out.println(":"+arr.get(i).major);
+			System.out.println(":"+arr.get(i).num);
+			System.out.println(":"+arr.get(i).score);
 		}
 		while(true) {
-			System.out.print("ÇÐ»ý ÀÌ¸§ >> ");
+			System.out.print(">> ");
 			String a= scanner.nextLine();
 			for(int i=0; i<4; i++) {
 					if(a.equals(arr.get(i).name)) {
 						System.out.println(arr.get(i).toString());
 					}
 				}
-			if(a.equals("±×¸¸")) {
+			if(a.equals("")) {
 				break;
 			}
 				
