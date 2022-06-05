@@ -15,12 +15,13 @@ import javax.swing.JPanel;
 public class ImageGallary extends JFrame{
 	int i;
 	
+	
 	public ImageGallary() {
 		i=0;
 		this.setTitle("Image Gallary Practice Frame");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		Container con=this.getContentPane();//******
+		Container con=this.getContentPane(); //*****
 		con.setLayout(new BorderLayout());
 		
 		JPanel pan=new JPanel();
@@ -41,6 +42,8 @@ public class ImageGallary extends JFrame{
 		images[3]=new ImageIcon("C:\\grape.jpg");
 		images[4]=new ImageIcon("C:\\avocado.jpg");
 		
+		
+		
 		lb.setIcon(images[0]);
 		left.setVisible(false);
 		
@@ -50,12 +53,13 @@ public class ImageGallary extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
+				JButton btn=(JButton)e.getSource();
 				right.setVisible(true);
 				if(i>0) {
 					i--;
 					lb.setIcon(images[i]);
 					if(i==0) {
-					left.setVisible(false);
+					btn.setVisible(false);
 					}
 				}
 				
@@ -67,12 +71,13 @@ public class ImageGallary extends JFrame{
 			  @Override
 			  public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
+				JButton btn=(JButton)e.getSource();
 				left.setVisible(true);
 				if(i<4) {
 					i++;
 					lb.setIcon(images[i]);
 					if(i==4) {
-					right.setVisible(false);
+					btn.setVisible(false);
 					}
 				}
 				
