@@ -13,11 +13,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class ImageGallary extends JFrame{
-	int i;
+	int i=0;
 	
 	
 	public ImageGallary() {
-		i=0;
+		this.i=0; 
 		this.setTitle("Image Gallary Practice Frame");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
