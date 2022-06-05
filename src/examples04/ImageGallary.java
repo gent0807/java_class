@@ -16,11 +16,11 @@ public class ImageGallary extends JFrame{
 	int i;
 	
 	public ImageGallary() {
-		int k=0;
+		i=0;
 		this.setTitle("Image Gallary Practice Frame");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		Container con=this.getContentPane();
+		Container con=this.getContentPane();//******
 		con.setLayout(new BorderLayout());
 		
 		JPanel pan=new JPanel();
