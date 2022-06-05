@@ -14,14 +14,14 @@ class Student{
 		return this.major+", "+this.num+", "+this.score;
 	}
 }
-public class ÄÃ·º¼Ç°úÁ¦³×¸¯±â¹ý½Ç½À5¹ø02{
+public class ì»¬ë ‰ì…˜ê³¼ì œë„¤ë¦­ê¸°ë²•ì‹¤ìŠµ5ë²ˆ02{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		HashMap<String, Student> map= new HashMap<String, Student>();
         String[] c=new String[4];
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("ÇÐ»ý ÀÌ¸§, ÇÐ°ú, ÇÐ¹ø, ÇÐÁ¡Æò±Õ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println(".");
 		
 		for(int i=0;i<4;i++) {
 			System.out.print(">>");
@@ -38,21 +38,21 @@ public class ÄÃ·º¼Ç°úÁ¦³×¸¯±â¹ý½Ç½À5¹ø02{
 		
 		for(int i=0;i<4;i++) {
 			System.out.println("---------------------");
-			System.out.println("ÀÌ¸§:"+c[i]);
-			System.out.println("Àü°ø:"+map.get(c[i]).major);
-			System.out.println("ÇÐ¹ø:"+ map.get(c[i]).num);
-			System.out.println("ÇÐÁ¡Æò±Õ:"+ map.get(c[i]).score);
+			System.out.println("å ì‹±ëªŒì˜™:"+c[i]);
+			System.out.println("å ì™ì˜™å ì™ì˜™:"+map.get(c[i]).major);
+			System.out.println("å ì‹»ë±„ì˜™:"+ map.get(c[i]).num);
+			System.out.println("å ì™ì˜™å ì™ì˜™å ì™ì˜™å ï¿½:"+ map.get(c[i]).score);
 		}
 		
 		while(true) {
-			System.out.print("ÇÐ»ý ÀÌ¸§ >> ");
+			System.out.print("å ì‹»ì‚¼ì˜™ å ì‹±ëªŒì˜™ >> ");
 			String a= scanner.nextLine();
 			for(int i=0; i<4; i++) {
 					if(a==c[i]) {
 						System.out.println(map.get(c[i]).toString());
 					}
 				}
-			if(a=="±×¸¸") {
+			if(a=="å ìŒ“ëªŒì˜™") {
 				break;
 			}
 				

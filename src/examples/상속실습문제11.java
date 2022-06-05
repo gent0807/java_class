@@ -4,7 +4,7 @@ public class 상속실습문제11 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("두 정수와 연산자를 입력하시오.>>");
+		System.out.print(" ");
 		Scanner a=new Scanner(System.in);
 		
 		String r=a.nextLine();

@@ -24,7 +24,7 @@ public class 컬렉션과제네릭기법실습5번 {
 		// TODO Auto-generated method stub
 		ArrayList<Student> arr= new ArrayList<Student>();
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("학생 이름, 학과, 학번, 학점평균 입력하세요.");
+		System.out.println(".");
 		for(int i=0;i<4;i++) {
 			System.out.print(">>");
 			String a= scanner.nextLine();
@@ -40,20 +40,20 @@ public class 컬렉션과제네릭기법실습5번 {
 		
 		for(int i=0;i<4;i++) {
 			System.out.println("---------------------");
-			System.out.println("이름:"+arr.get(i).name);
-			System.out.println("전공:"+arr.get(i).major);
-			System.out.println("학번:"+arr.get(i).num);
-			System.out.println("학점평균:"+arr.get(i).score);
+			System.out.println(":"+arr.get(i).name);
+			System.out.println(":"+arr.get(i).major);
+			System.out.println(":"+arr.get(i).num);
+			System.out.println(":"+arr.get(i).score);
 		}
 		while(true) {
-			System.out.print("학생 이름 >> ");
+			System.out.print(">> ");
 			String a= scanner.nextLine();
 			for(int i=0; i<4; i++) {
 					if(a.equals(arr.get(i).name)) {
 						System.out.println(arr.get(i).toString());
 					}
 				}
-			if(a.equals("그만")) {
+			if(a.equals("")) {
 				break;
 			}
 				

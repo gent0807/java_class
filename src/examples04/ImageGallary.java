@@ -55,7 +55,7 @@ public class ImageGallary extends JFrame{
 				// TODO Auto-generated method stub
 				JButton btn=(JButton)e.getSource();
 				right.setVisible(true);
-				if(i>0) {
+				if(i>0) {					
 					i--;
 					lb.setIcon(images[i]);
 					if(i==0) {
