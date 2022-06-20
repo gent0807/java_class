@@ -40,25 +40,25 @@ public class MainProg extends JFrame{
 	}
 	
 	public void createGUI() {
-		JLabel lb_id=new JLabel("í•™ë²ˆ");
+		JLabel lb_id=new JLabel("ÇĞ¹ø");
 		con.add(lb_id);
 		tf_id=new JTextField(20);
 		con.add(tf_id);
-		JLabel lb_name=new JLabel("ì´ë¦„"); 
+		JLabel lb_name=new JLabel("ÀÌ¸§"); 
 		con.add(lb_name);
 		tf_name=new JTextField(20);
 		con.add(tf_name);
-		JLabel lb_major=new JLabel("í•™ê³¼");
+		JLabel lb_major=new JLabel("ÇĞ°ú");
 		con.add(lb_major);
 		
-		String[] major_code= {"ì»´í“¨í„°ì†Œí”„íŠ¸ì›¨ì–´ê³¼","ì»´í“¨í„°ì •ë³´ê³¼","ì „ê¸°ì „ìì •ë³´í†µì‹ ê³¼","ë””ìì¸ê³¼","ê²½ì˜í•™ê³¼","ì´ìŠ¤í¬ì¸ ì¸ê³µì§€ëŠ¥ê³¼"};
+		String[] major_code= {"ÄÄÇ»ÅÍ¼ÒÇÁÆ®¿ş¾î°ú","ÄÄÇ»ÅÍÁ¤º¸°ú","Àü±âÀüÀÚÁ¤º¸Åë½Å°ú","µğÀÚÀÎ°ú","°æ¿µÇĞ°ú","ÀÌ½ºÆ÷Ã÷ÀÎ°øÁö´É°ú"};
 		cb_major=new JComboBox<String>(major_code);
 		con.add(cb_major);
 		
-		btn_bat=new JButton("ì¼ê´„ì…ë ¥");
-		btn_ins=new JButton("ì…ë ¥");
-		btn_dis=new JButton("íŒŒì¼ì¶œë ¥");
-		btn_out=new JButton("ë³´ê³ ì„œ ì¶œë ¥");
+		btn_bat=new JButton("ÀÏ°ıÀÔ·Â");
+		btn_ins=new JButton("ÀÔ·Â");
+		btn_dis=new JButton("ÆÄÀÏÃâ·Â");
+		btn_out=new JButton("º¸°í¼­Ãâ·Â");
 		
 		con.add(btn_bat);
 		con.add(btn_ins);
@@ -87,7 +87,7 @@ public class MainProg extends JFrame{
 				String major=cb_major.getSelectedItem().toString();
 				Student student_ex=new Student(id, name, major);
 				stdList.add(student_ex);
-				System.out.println(name+"ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
+				System.out.println(name+" ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
 			}
 		});
 		
@@ -105,6 +105,8 @@ public class MainProg extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
+				System.out.println("---------------");
+				System.out.println("+   ÇĞ¹ø    +     ÀÌ¸§    +    Àü°ø   +");
 				for(Student student: stdList) {
 					System.out.println(student.getStudentId()+" "+student.getStudentName()+" "+student.getStudentMajor()+"\n");
 					
