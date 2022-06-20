@@ -18,7 +18,7 @@ class Student{
 		return this.name+", "+this.major+", "+this.num+", "+this.score;
 	}
 }
-public class ÄÃ·º¼Ç°úÁ¦³×¸¯±â¹ý½Ç½À5¹ø {
+public class ì»¬ë ‰ì…˜ê³¼ì œë„¤ë¦­ê¸°ë²•ì‹¤ìŠµ5ë²ˆ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
